@@ -6,42 +6,47 @@
     android:paddingRight="10dp">
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/txtVw1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:text="First name:"
         android:layout_marginTop="20dp"
-        android:textSize="20dp"/>
+        android:text="First name:"
+        android:textSize="20dp" />
+
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/textView1"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/txtVw1" />
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtVw2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/txtVw1"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
         android:layout_marginTop="10dp"
         android:text="Last name:"
-        android:textSize="20dp"/>
+        android:textSize="20dp" />
+
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_toRightOf="@id/textView2"
-        android:layout_marginTop="45dp"/>
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@id/txtVw2" />
+
     <Button
-        android:id="@+id/btn4"
+        android:id="@+id/showInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/txtVw2"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/textView2"
         android:layout_marginTop="20dp"
+        android:onClick="sendMessage"
         android:text="Submit" />
 
 </RelativeLayout>
